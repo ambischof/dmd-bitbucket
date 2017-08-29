@@ -4,7 +4,7 @@
 Global | Description
 ------ | -----------
 {{/if~}}
-{{>sig-name}} | {{{inlineLinks description}}}
+{{>sig-name}} | {{#if summary}}{{{inlineLinks summary}}}{{else}}{{{inlineLinks description}}}{{/if}}
 {{#if @last}}
 
 {{/if}}
